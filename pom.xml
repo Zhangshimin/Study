@@ -28,7 +28,13 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback-version}</version>
         </dependency>
-    </dependencies>
+       <dependency>
+           <groupId>com.google.guava</groupId>
+           <artifactId>guava</artifactId>
+           <version>17.0</version>
+       </dependency>
+
+   </dependencies>
 
 
 
