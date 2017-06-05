@@ -8,5 +8,12 @@ import lombok.Data;
 @Data()
 public class Demo {
     private String x1;
+    public static void staticMethod(){
+
+    }
+
+
+
+    
 
 }

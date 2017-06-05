@@ -34,17 +34,17 @@ public class ReflectDemo {
     @Test
     public void getPackageName(){
         Demo demo = new Demo();
-        List<Double> ss = Lists.newArrayList() ;
+        List<Double> ss = Lists.newArrayList(1.1) ;
         log.info(demo.getClass().getName());
         log.info(demo.getClass().getCanonicalName());
         log.info(demo.getClass().getSimpleName());
         log.info(demo.getClass().getTypeName());
         log.info(demo.getClass().getSuperclass().getName());
         log.info(demo.getClass().isArray()+"");
-        log.info(ss.getClass().getComponentType().toString());
+        log.info(ss.getClass().toString());
         log.info(demo.getClass().getClassLoader().toString());
         try {
-            Method method = demo.getClass().getMethod("getName");
+            Method method = demo.getClass().getMethod("getX1");
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
